@@ -1,0 +1,161 @@
+body {
+  background: #eeefed;
+}
+
+a {
+  text-decoration:none;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  padding-top:25px;
+}
+h1 {
+  position: relative;
+  text-align: center;
+  color: #353535;
+  font-size: 50px;
+  font-family: "Calibri", sans-serif;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 18px;
+  color: #676767;
+}
+.frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+button {
+  margin: 20px;
+}
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+              7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+              4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+/* 1 */
+.btn-1 {
+  background: #e74c3c; /* Different shade of red for default state */
+  border: none;
+}
+.btn-1:hover {
+  background: #c0392b; /* Different shade of red on hover */
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.5); /* Add subtle shadow on hover */
+  transform: translateY(-5px); /* Move button up on hover for a lifting effect */
+  color: #ff7b00; /* Change text color on hover */
+}
+
+/* 2 */
+.btn-2 {
+  background: #d9534f; /* Different shade of red for default state */
+  border: none;
+}
+.btn-2:hover {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
+              inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+              inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4); /* Add a 3D effect on hover */
+  transform: rotateX(180deg); /* Flip on the x-axis on hover for a dynamic effect */
+}
+
+/* 3 */
+.btn-3 {
+  background: #e67e22; /* Different shade of red for default state */
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  animation: moveRight 1s ease infinite alternate; /* Apply the keyframe animation */
+}
+
+/* Define keyframe animation */
+@keyframes moveRight {
+  to {
+    transform: translateX(10px);
+  }
+}
+
+.btn-3 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-3:before,
+.btn-3:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: #d35400; /* Different shade of red for default state */
+  transition: all 0.3s ease;
+}
+.btn-3:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-3:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3:hover {
+  background: transparent; /* Make background transparent on hover */
+  box-shadow: none; /* Remove box shadow on hover for a cleaner look */
+}
+.btn-3:hover:before {
+  height: 100%; /* Expand the vertical line on hover */
+}
+.btn-3:hover:after {
+  width: 100%; /* Expand the horizontal line on hover */
+}
+.btn-3 span:hover {
+  color: #e74c3c; /* Different shade of red on hover for text */
+  transform: rotateY(180deg); /* Flip on the y-axis on hover for a dynamic effect */
+}
+.btn-3 span:before,
+.btn-3 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background: #d35400; /* Different shade of red for default state */
+  transition: all 0.3s ease;
+}
+.btn-3 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-3 span:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3 span:hover:before {
+  height: 100%; /* Expand the vertical line on hover */
+}
+.btn-3 span:hover:after {
+  width: 100%; /* Expand the horizontal line on hover */
+}
